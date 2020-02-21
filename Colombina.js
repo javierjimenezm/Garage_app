@@ -4,6 +4,7 @@ const path = require("path");
 const app = express();
 const router = express.Router();
 
+// configuracion de cloud foundry
 var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
 app.listen(appEnv.port, "0.0.0.0", function() {
