@@ -7,7 +7,7 @@ const router = express.Router();
 var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
 app.listen(appEnv.port, "0.0.0.0", function() {
-  console.log("server starting on " + appEnv.url);
+  console.log("server node starting on " + appEnv.url);
 });
 
 app.use(express.static(path.join(__dirname)));
